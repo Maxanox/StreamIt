@@ -8,15 +8,17 @@
     export let width: number = 640;
     export let height: number = 360;
     export let borderRadius: number = 15;
+    export let frameborder: number = 0;
+    export let scrolling: boolean = false;
 </script>
 
 <iframe 
     title={title} 
     src="//vidmoly.to/embed-{srcKey}.html" 
-    scrolling="no" 
-    frameborder=0 
+    scrolling={scrolling ? "yes" : "no"}
+    frameborder={frameborder}
     width={width}
     height={height}
-    allow={allowFullscreen ? "fullscreen" : ""}
+    allowfullscreen={allowFullscreen}
     style="border-radius: {borderRadius}px;">
 </iframe>

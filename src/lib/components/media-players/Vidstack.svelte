@@ -8,6 +8,7 @@
     import { isHLSProvider } from 'vidstack';
     import type { MediaProviderChangeEvent } from 'vidstack';
     import type { MediaPlayerElement } from 'vidstack/elements';
+    import { onMount } from 'svelte';
 
     // Required
     export let title: string;
@@ -39,4 +40,5 @@
 <media-player crossorigin bind:this={player} title={title} src={src} style="aspect-ratio: 16/9; width: {width}px; height: {height}px:">
     <media-provider></media-provider>
     <media-video-layout></media-video-layout>
+    Player is loading...
 </media-player>

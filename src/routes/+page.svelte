@@ -1,17 +1,19 @@
-
-<script lang='ts'>
-    import Vidmoly from '$lib/components/media-players/Vidmoly.svelte';
+<script lang="ts">
+    import Intuitive from "$lib/components/intuitive/Intuitive.svelte";
 </script>
 
+<h1>Stream!t</h1>
+
+<Intuitive/>
+
 <style>
-    .Vidmoly {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+    :global(body) {
+		background-color: #222222;
+	}
+
+    h1 {
+        text-align: center;
+        font-family: Arial;
+        font-size: 50px;
     }
 </style>
-
-<div class="Vidmoly">
-    <Vidmoly title="Sword Art Online Movie" srcKey="1sejgdkyterx" width={1280} height={720}/>
-</div>
